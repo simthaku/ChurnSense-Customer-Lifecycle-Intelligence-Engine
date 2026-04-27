@@ -94,7 +94,7 @@ Clean Data → Encode → Train → Evaluate → Predict
 
 ### 🔹 Churn Analysis Dashboard
 
-![Churn Analysis](images/churn_analysis.png)
+![Churn Analysis](Churn_analysis_summary.png)
 
 This dashboard provides a comprehensive view of customer churn:
 
@@ -117,7 +117,7 @@ This dashboard provides a comprehensive view of customer churn:
 
 ### 🔹 Churn Prediction Dashboard
 
-![Churn Prediction](images/churn_prediction.png)
+![Churn Prediction](Chrun_analysis_prediction.png)
 
 This dashboard operationalizes machine learning predictions:
 
