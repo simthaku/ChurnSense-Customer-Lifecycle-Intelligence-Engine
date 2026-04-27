@@ -1,6 +1,3 @@
-# ChurnSense-Customer-Lifecycle-Intelligence-Engine
-An end-to-end data system that transforms customer behavior into predictive churn insights and actionable retention strategies.
-
 # 🧠 ChurnSense  
 ### Customer Lifecycle Intelligence & Experience Orchestration Engine
 
@@ -10,8 +7,8 @@ An end-to-end data system that transforms customer behavior into predictive chur
 
 ## ⚡ Problem Context
 
-In subscription-driven businesses, churn is not a one-time event —  
-it is the result of progressive customer disengagement across lifecycle stages.
+In subscription-driven businesses, churn is not a one-time event.  
+It is the result of progressive customer disengagement across lifecycle stages.
 
 Most solutions:
 - Detect churn too late  
@@ -22,13 +19,15 @@ Most solutions:
 
 ## 🎯 What I Built
 
-An end-to-end customer intelligence system that:
+An end-to-end customer intelligence system that transforms raw data into decisions.
 
 Raw Customer Data → Predictive Signals → Business Actions
+
 
 ---
 
 ## 🧩 System Architecture
+
 Customer Data (Raw)
 ↓
 SQL ETL Layer (Staging → Clean → Views)
@@ -69,10 +68,10 @@ Action Layer (Retention Targeting)
 ---
 
 ### 3️⃣ Predictive Intelligence (ML)
-
 - Model: Random Forest  
 - Objective: Predict future churn  
 
+Clean Data → Encode → Train → Evaluate → Predict
 
 
 - Output:
@@ -82,11 +81,53 @@ Action Layer (Retention Targeting)
 ---
 
 ### 4️⃣ Decision Layer
-
 - Converted predictions into:
   - High-risk customer list  
   - Business-ready dataset  
 - Enables proactive retention actions  
+
+---
+
+## 📊 Dashboard Insights (Power BI)
+
+### 🔹 Churn Analysis Dashboard
+
+![Churn Analysis](images/churn_analysis.png)
+
+This dashboard provides a comprehensive view of customer churn:
+
+- KPIs Overview:
+  - Total Customers: 6,418  
+  - Total Churn: 1,732  
+  - Churn Rate: 27%  
+  - New Joiners: 411  
+
+- Key Drivers:
+  - Month-to-month contracts show highest churn  
+  - Low tenure customers are more vulnerable  
+  - Higher monthly charges increase churn risk  
+
+- Business Value:
+  - Identifies high-risk segments  
+  - Supports retention strategy planning  
+
+---
+
+### 🔹 Churn Prediction Dashboard
+
+![Churn Prediction](images/churn_prediction.png)
+
+This dashboard operationalizes machine learning predictions:
+
+- Displays predicted churn customers  
+- Provides customer-level profiling  
+- Enables:
+  - Targeted retention campaigns  
+  - Personalized offers  
+
+- Business Value:
+  - Converts predictions into actionable insights  
+  - Bridges analytics with decision-making  
 
 ---
 
@@ -102,7 +143,7 @@ Action Layer (Retention Targeting)
 ## 📊 Model Performance
 
 - Accuracy: ~80%  
-- Metrics used:
+- Metrics:
   - Precision  
   - Recall  
   - F1 Score  
@@ -140,15 +181,20 @@ Action Layer (Retention Targeting)
 
 ---
 
-## 🔥 Future Enhancements 
+### Customer Lifecycle Segmentation
 
 New → Active → At Risk → Churned
 
-### Customer Lifecycle Segmentation
+
+
+### Action Recommendation Layer
+
 At Risk → Retain
 High Value → Upsell
 Stable → Monitor
 
+## 🧠 My Approach
+Data → System → Decision → Impact
 
 
 ---
@@ -169,3 +215,6 @@ This is:
 
 - Star ⭐ the repo  
 - Let’s connect and discuss data  
+
+
+
