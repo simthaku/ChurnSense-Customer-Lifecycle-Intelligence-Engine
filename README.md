@@ -28,6 +28,7 @@ Raw Customer Data → Predictive Signals → Business Actions
 
 ## 🧩 System Architecture
 
+<pre>
 Customer Data (Raw)
 ↓
 SQL ETL Layer (Staging → Clean → Views)
@@ -41,6 +42,7 @@ Machine Learning Model
 Prediction Output (At-Risk Customers)
 ↓
 Action Layer (Retention Targeting)
+</pre>
 
 
 ---
