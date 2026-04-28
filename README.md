@@ -117,7 +117,7 @@ This dashboard provides a comprehensive view of customer churn:
 
 ### 🔹 Churn Prediction Dashboard
 
-![Churn Prediction](Chrun_analysis_prediction.png)
+![Churn Prediction](Churn_analysis_prediction.png)
 
 This dashboard operationalizes machine learning predictions:
 
