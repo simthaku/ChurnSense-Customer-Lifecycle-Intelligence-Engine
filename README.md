@@ -133,12 +133,31 @@ This dashboard operationalizes machine learning predictions:
 
 ---
 
-## 🧠 Key Business Insights
+## 📈 Key Business Insights
 
-- Month-to-month contracts → highest churn  
-- High monthly charges → increased churn risk  
-- Low tenure → high vulnerability  
-- Fiber users → higher churn probability  
+### 1. Overall churn rate is 27% — 1 in 4 customers is leaving
+Out of 6,418 total customers, **1,732 have churned**. With 411 new joiners not yet contributing meaningful revenue, retention of existing customers is the top priority.
+
+### 2. Month-to-month contracts are the biggest churn driver
+Contract type churn rates: **Month-to-Month: 46.5%** vs One Year: 11.0%. Nearly half of all flexible-contract customers churn — a clear signal that long-term contract incentives could significantly reduce attrition.
+
+### 3. Fiber Optic users churn at 41.1% — the highest among internet types
+Despite Fiber Optic being the premium service, it has the highest churn rate (41.1%), compared to Cable (25.7%) and DSL (19.4%). This points to a service quality or pricing perception problem for high-paying customers.
+
+### 4. Older customers churn most — 31% churn rate in the 50+ age group
+Churn rate climbs with age: `<20: low`, `20-35: 23.5%`, `35-50: 24%`, `>50: 31%`. Senior customers may need targeted support or simpler service plans.
+
+### 5. Jammu & Kashmir has the highest state-level churn at 57.2%
+Geographic churn is highly concentrated — Jammu & Kashmir (57.2%), Assam (38.1%), and Jharkhand (34.5%) are significantly above the national average. Regional service or pricing issues may be driving this.
+
+### 6. Competitor activity is the #1 churn reason (761 customers)
+The churn category breakdown shows: Competitor (761) > Attitude (301) > Dissatisfaction (300) > Price (196). Competitive pricing and feature comparison should be the focus of retention strategy.
+
+### 7. Internet Service is used by 80.5% of churned customers
+The services table shows Internet_Service has 80.50% adoption among churned customers — the highest of any service. Customers with internet are more likely to compare providers and switch.
+
+### 8. ML model identified 376 new joiners already at risk
+The Random Forest model scored all new joiners and flagged **376 customers as predicted churners** before they actually churn — enabling proactive outreach while there's still time to retain them.
 
 ---
 
@@ -155,13 +174,15 @@ This dashboard operationalizes machine learning predictions:
 
 ## 🛠️ Tech Stack
 
-| Layer | Tools |
-|------|------|
-| Data | MySQL |
-| Processing | Python (Pandas, NumPy) |
-| Visualization | Power BI |
-| ML | Scikit-learn |
-| Analysis | SQL |
+| Layer | Tool |
+|---|---|
+| Database & SQL | MySQL |
+| Data Cleaning | SQL (ISNULL, CASE, staging → prod pipeline) |
+| Visualization | Power BI Desktop (2-page dashboard) |
+| Data Transformation | Power Query (M language) |
+| DAX Measures | Power BI DAX |
+| ML Model | Python — scikit-learn Random Forest |
+| ML Environment | Jupyter Notebook (Anaconda) |
 
 ---
 
@@ -210,6 +231,19 @@ This is not:
 This is:
 - A customer intelligence system  
 - A decision-support engine  
+
+---
+
+## 💡 What This Project Demonstrates
+
+- ✅ End-to-end analytics pipeline: SQL → Power BI → Python ML
+- ✅ Production-quality SQL data cleaning with business-driven null handling
+- ✅ Creating SQL views to cleanly separate analytical and prediction datasets
+- ✅ Power Query transformations: computed columns, mapping tables, column unpivoting
+- ✅ DAX measure writing for dynamic KPI cards
+- ✅ Random Forest classification with proper train/test split and label encoding
+- ✅ Preventing data leakage by reusing training encoders on new data
+- ✅ Closing the loop — bringing ML predictions back into Power BI for business consumption
 
 ---
 
